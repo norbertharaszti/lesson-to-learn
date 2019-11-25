@@ -2,8 +2,7 @@ package com.company;
 
 public class Person {
 
-    private String firstName;
-    private String lastName;
+    private String name;
     private String company;
     private String address;
     private String city;
@@ -12,11 +11,10 @@ public class Person {
     private int zip;
     private String email;
 
-    public Person(String firstName, String lastName,
-                  String company, String address, String city, String county,
+    public Person(String name, String company, String address,
+                  String city, String county,
                   String state, int zip, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.name = name;
         this.company = company;
         this.address = address;
         this.city = city;
@@ -26,12 +24,8 @@ public class Person {
         this.email = email;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
+    public String getName() {
+        return name;
     }
 
     public String getCompany() {
